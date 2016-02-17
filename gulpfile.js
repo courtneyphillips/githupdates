@@ -1,3 +1,4 @@
+var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var concat = require('gulp-concat');
 var browserify = require('browserify');
@@ -8,7 +9,7 @@ gulp.task('concatInterface', function(){
     .pipe(gulp.dest('./tmp'));
 });
 
-gulp.task('jsBrowserify'j, ['concatInterface'], function(){
+gulp.task('jsBrowserify', ['concatInterface'], function(){
   return browserify({ entries: ['./tmp/allConcat.js'] })
   .bundle()
   .pipe(source('app.js'))
