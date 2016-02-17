@@ -4,7 +4,10 @@ $(document).ready(function(){
     dataType: "json",
     userAgent: "test",
     success: function(returndata){
-      console.log('hey');
+      console.log(returndata);
+      $('#githubUrl').text("your Github URL is " + returndata.url)
+      $('#location').text("You are located in " + returndata.location)
+      $('#followers').text("You currently have " + returndata.followers + " followers.")
     }
     })
   });
