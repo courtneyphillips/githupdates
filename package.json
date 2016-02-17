@@ -1,0 +1,22 @@
+{
+  "name": "githupdates",
+  "version": "1.0.0",
+  "description": "an application to practice implementing the github api.",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/courtneyphillips/githupdates.git"
+  },
+  "author": "courtney phillips",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/courtneyphillips/githupdates/issues"
+  },
+  "homepage": "https://github.com/courtneyphillips/githupdates#readme"
+}
